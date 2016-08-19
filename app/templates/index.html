@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Service Worker Test</title>
+</head>
+<body>
+	<h1>Hello, World!</h1>
+	<p>This is a simple page to test service worker</p>
+	<img src="{{ url_for('static', filename='img/sw.jpg')}}">
+	<script>
+		navigator.serviceWorker.register('/sw.js', {scope: '/'}).then(function() {
+			console.log('SW registered');
+		}).catch(function() {
+			console.log('SW not registered');
+		});
+	</script>
+</body>
+</html>
