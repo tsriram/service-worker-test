@@ -5,7 +5,7 @@ To test this locally (you should have python & virtualenv installed), follow thi
 * Clone this repo
 * cd service-worker-test and create the virtual environment `virtualenv venv`
 * Activate virtual environment - `. venv/bin/activate`
-* run `pip install requirements.txt`
+* run `pip install -r requirements.txt`
 * start the server `./run.py`
 * Go check http://localhost:5000 on a browser that supports service worker
 * stop the server (Ctrl+C)
